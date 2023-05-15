@@ -1,32 +1,31 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
-
-.grid-menu{
-    grid-template-rows: auto auto auto;
-    margin-top: 100px;
-    margin-left: 100px;
-    background-color: #808080;
-    width: 300px;
-    height: 480px;
-}
-.grid-item {
+.menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
-    height: 80px;
-    background-color: transparent;
-    padding: 8px;
-}
 
-.grid-item div{
-    display: flex;
-    width: 180px;
-    justify-content: space-between;
 }
-.grid-item:hover{
-    background-color: #5e5e5e;
+.menu ul{
+margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    background-color: #939191;
+    list-style-type: none;
+}
+.menu  ul  li i{
+    margin-right: 15px;
+}
+.menu ul li:hover {
+    background-color: #2a4f6e;
 }
