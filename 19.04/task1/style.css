@@ -2,66 +2,60 @@
     margin:0;
     padding: 0;
 }
-.clock{
+.heading{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 170px;
     height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid green;
-    position: absolute;
-}
-
-.clock .point{
-    position: absolute;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    margin: auto;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-.clock .hour{
-    position: absolute;
-    height: 100%;
-    width: 7px;
-    margin:0 auto;
-    right: 0;
-    left: 0;
-    animation:time 60s infinite linear;
-}
-
-.clock .hour::before{
-    height: 60px;
-    width: 3px;
-    content: "";
-    position: absolute;
-    top: 40px;
-    background-color: black;
-}
-
-
-
-.clock .minute{
-    position: absolute;
-    height: 100%;
-    width: 4px;
-    margin:0 auto;
-    right: 0;
-    left: 0;
-    animation:time 45s infinite linear;
-}
-.clock .minute::before{
-    height: 40px;
-    width: 4px;
-    content: "";
-    position: absolute;
-    top: 60px;
-    background-color: black;
+    border-radius: 20px;
+    border: 2px solid grey;
+    background-color: whitesmoke;
+    text-align: center;
 
 }
-@keyframes time {
-    to {
-        transform: rotate(360deg);
-    }
+.product{
+    display: block;
+    width: 150px;
+    height: 170px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.product img{
+    width: 120px;
+    height: 140px;
+}
+.product p{
+    margin-left: 50px;
+    width: 40px;
+    text-align: center;
+}
+hr{
+    margin: 30px;
+    border-width: 1px;
+    border-color: black;
+
+}
+
+.end-div{
+    margin-top: 20px;
+    text-align: center;
 }
