@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+}
+
+h1 {
+    position: absolute;
+    z-index: -1;
+}
+
+.door {
+    width: 200px;
+    height: 200px;
+    background-color: fuchsia;
+    transition: all ease 1.5s;
+}
+.left {
+    transform-origin: left;
+}
+.right {
+    transform-origin: right;
+}
+.wrap:hover > .left {
+    transform: rotateY(50deg);
+}
+.wrap:hover > .right {
+    transform: rotateY(-50deg);
+}
