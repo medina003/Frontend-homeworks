@@ -1,0 +1,54 @@
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    background: pink;
+    padding: 1rem;
+    transition: background 0.5s;
+    display: block;
+    outline: 0;
+}
+
+nav a:hover,
+nav li:focus-within > a {
+    background: hotpink;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    min-width: max-content;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+    max-height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    nav > ul > li {
+        float: left;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        width: max-content;
+    }
+
+    .content {
+        clear: both;
+    }
+}
